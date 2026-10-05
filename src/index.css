@@ -1,10 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Galindo&family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f5f0;
-  color: #212529;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #d4d4cd;
+  color: rgba(47, 61, 41, 0.884)
 }
 
 #root {
   min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Galindo', sans-serif;
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-hero {
+  background-color: #f1ece1;
+}
+
+.home-mug {
+  width: clamp(300px, 22vw, 400px);
+  height: auto;
+  border-radius: 12px;
+}
+
+.shop-button {
+  background-color: #3d4d36;
+  color: white;
+  border: none;
+}
+
+.shop-button:hover {
+  background-color: #36422fbe;
+  color: white;
+}
+
+.featured-scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+  min-width: 0;
+  width: 0;
+  flex: 1 1 auto;
+}
+
+.featured-scroll img {
+  -webkit-user-drag: none;
+  user-select: none;
+  
+}
+
+.featured-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+@media (min-width: 1200px) {
+  .featured-scroll .row {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 1199px) {
+  .featured-scroll .row {
+    flex-wrap: nowrap;
+  }
+
+  .featured-scroll .row > div {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 575px) {
+  .featured-scroll .row > div {
+    flex: 0 0 52%;
+    max-width: 52%;
+  }
 }

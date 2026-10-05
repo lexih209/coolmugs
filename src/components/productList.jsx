@@ -6,7 +6,7 @@ function ProductList({ products, onSelectProduct }) {
 
       {products.map((product) => (
         <div
-          className="col-12 col-sm-6 col-lg-4 col-xl-3"
+          className="col-6 col-md-4 col-xl-3"
           key={product.id}>
 
 

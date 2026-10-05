@@ -53,15 +53,15 @@ function CreateAccount({ setView }) {
 
     if (addressStarted) {
       if (!formData.street.trim()) {
-        newErrors.street = 'Street is required when entering an address.'
+        newErrors.street = 'Please enter street.'
       }
 
       if (!formData.city.trim()) {
-        newErrors.city = 'City is required when entering an address.'
+        newErrors.city = 'Please enter city.'
       }
 
       if (!formData.state.trim()) {
-        newErrors.state = 'State is required when entering an address.'
+        newErrors.state = 'Please enter state.'
       }
 
       if (!/^\d{5}$/.test(formData.zip)) {
@@ -91,7 +91,7 @@ function CreateAccount({ setView }) {
     }
 
     setErrors({})
-    setSuccess('Account information validated successfully.')
+    setSuccess('Account creation success!')
   }
 
   return (
@@ -99,7 +99,7 @@ function CreateAccount({ setView }) {
       <h1>Create Account</h1>
 
       <p className="text-muted">
-        Required fields are marked with *.
+        Required field *
       </p>
 
       <form

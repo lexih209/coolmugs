@@ -138,8 +138,14 @@ function App() {
           />
         )
       case 'home':
-      default:
-        return <Home setView={setView} />
+        default:
+          return (
+            <Home
+              setView={setView}
+              products={products}
+              onSelectProduct={openProduct}
+            />
+          )
     }
   }
 

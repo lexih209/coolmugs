@@ -1,16 +1,24 @@
 function Navbar({ setView, cartCount }) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark"
+      style={{ backgroundColor: '#24301e' }}
+>
       <div className="container">
         <button
           className="navbar-brand btn btn-link text-decoration-none d-flex align-items-center"
+          style={{
+           fontFamily: "'Galindo', sans-serif",
+            color: '#fffcf5'
+           }}
           onClick={() => setView('home')}
         >
           <img
-            src="/mugLogo.png"
+            src="./mugLogo.png"
             alt="CoolMugs logo"
             width="35"
             height="35"
+            className="me-2"
             
           />
 

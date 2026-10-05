@@ -7,7 +7,7 @@ function Shop({ products, onSelectProduct }) {
         <h1 className="fw-bold">Shop CoolMugs</h1>
 
         <p className="text-muted">
-          Explore our collection of mugs and drinkware.
+          Explore our collection of unique drinkware
         </p>
       </div>
 
